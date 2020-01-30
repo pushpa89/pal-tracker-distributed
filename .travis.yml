@@ -45,7 +45,10 @@ jobs:
       jdk: openjdk11
       addons:
         mariadb: '10.2'
-      install: skip
+      before_install:
+        - pwd
+        - ls -la
+        - chmod +x ./gradlew
       before_script:
         - mysql -uroot < databases/create_databases.sql
         - ./gradlew testMigrate
@@ -65,7 +68,10 @@ jobs:
       jdk: openjdk11
       addons:
         mariadb: '10.2'
-      install: skip
+    before_install:
+      - pwd
+      - ls -la
+      - chmod +x ./gradlew
       before_script:
         - mysql -uroot < databases/create_databases.sql
         - ./gradlew testMigrate
@@ -85,7 +91,10 @@ jobs:
       jdk: openjdk11
       addons:
         mariadb: '10.2'
-      install: skip
+      before_install:
+        - pwd
+        - ls -la
+        - chmod +x ./gradlew
       before_script:
         - mysql -uroot < databases/create_databases.sql
         - ./gradlew testMigrate

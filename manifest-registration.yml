@@ -6,7 +6,7 @@ applications:
   memory: 400M
   instances: 1
   env:
-    REGISTRATION_SERVER_ENDPOINT: http://pal-tracker-distributed-registration.cfapps.io
+    REGISTRATION_SERVER_ENDPOINT: http://registration-pal-pal-tracker-distributed-registration.cfapps.io
     JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'
     JAVA_OPTS: '-Xmx250m -Xss100m'
   services:

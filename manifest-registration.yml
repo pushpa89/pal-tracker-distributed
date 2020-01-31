@@ -3,7 +3,7 @@ applications:
   path: ./applications/registration-server/build/libs/registration-server.jar
   routes:
   - route: registration-pal-pal-tracker-distributed-registration.cfapps.io
-  memory: 500M
+  memory: 400M
   instances: 1
   env:
     REGISTRATION_SERVER_ENDPOINT: http://pal-tracker-distributed-registration.cfapps.io
